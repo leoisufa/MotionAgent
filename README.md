@@ -1,5 +1,5 @@
 # **MotionAgent: Fine-grained Controllable Video Generation via Motion Field Agent**
-*ICCV 2025*
+*International Conference on Computer Vision, ICCV 2025.*
 
 **Xinyao Liao**<sup>1,2</sup>, **Xianfang Zeng**<sup>2</sup>, **Liao Wang**<sup>2</sup>, **Gang Yu***<sup>2</sup>, **Guosheng Lin***<sup>1</sup>, **Chi Zhang**<sup>3</sup>  
 <sup>1</sup> Nanyang Technological University <sup>2</sup> StepFun <sup>3</sup> Westlake University
@@ -15,7 +15,7 @@ PyTorch implementation of the paper:
 ## 🎥 Demo
 <p align="center">
   <a href="https://www.youtube.com/watch?v=O9WW2UpXsAI">
-    <img src="https://www.youtube.com/watch?v=O9WW2UpXsAI/0.jpg" 
+    <img src="https://img.youtube.com/vi/O9WW2UpXsAI/0.jpg" 
          alt="MotionAgent Demo Video" 
          width="80%" 
          style="max-width:900px;">
