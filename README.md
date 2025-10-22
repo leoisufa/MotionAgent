@@ -104,37 +104,33 @@ git clone https://github.com/YvanYin/Metric3D.git
 ```
 
 ## 🧱 Download Models  
-
 To run **MotionAgent**, please download all pretrained and auxiliary models listed below, and organize them under the `ckpts/` directory as shown in the example structure.  
 
 ### 1️⃣ **Optical Flow ControlNet Weights**  
-Download from  
-👉 [Hugging Face (MotionAgent)](https://huggingface.co/leoisufa/MotionAgent)  
-and place the files in ckpts/controlnet.
+Download from 👉 [Hugging Face (MotionAgent)](https://huggingface.co/leoisufa/MotionAgent) and place the files in `ckpts`.
 
 ### 2️⃣ **Stable Video Diffusion**  
-Download from  
-👉 [Hugging Face (MOFA-Video-Hybrid)](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/tree/main/ckpts/mofa/stable-video-diffusion-img2vid-xt-1-1)  
-and save the model to ckpts/stable-video-diffusion-img2vid-xt-1-1
+Download from 👉 [Hugging Face (MOFA-Video-Hybrid/stable-video-diffusion-img2vid-xt-1-1)](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/tree/main/ckpts/mofa/stable-video-diffusion-img2vid-xt-1-1) and save the model to `ckpts`.
 
 ### 3️⃣ **Grounding DINO**  
 Download the grounding model checkpoint using the command below:  
 ```bash
 wget https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
 ```
-Then place it directly under ckpts/groundingdino_swint_ogc.pth
+Then place it directly under `ckpts`.
 
-### 4️⃣ **Metric Depth Estimator** 
-Download from  
-👉 [Hugging Face (Metric3d)](https://huggingface.co/onnx-community/metric3d-vit-small)  
-and place the files in ckpts/metric_depth_vit_small_800k.pth.
-
-### 5️⃣ **Segment Anything**
+### 4️⃣ **Segment Anything**
 Download the segmentation model using:
 ```bash
 wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
 ```
-Then place it under ckpts/sam_vit_h_4b8939.pth.
+Then place it under `ckpts`.
+
+### 5️⃣ **Metric Depth Estimator** 
+Download from 👉 [Hugging Face (Metric3d)](https://drive.google.com/file/d/1YfmvXwpWmhLg3jSxnhT7LvY0yawlXcr_/view?usp=drive_link) and place the files in `ckpts`.
+
+### 6️⃣ **CMP**
+Download from 👉 [Hugging Face (MOFA-Video-Hybrid/cmp)](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/resolve/main/models/cmp/experiments/semiauto_annot/resnet50_vip%2Bmpii_liteflow/checkpoints/ckpt_iter_42000.pth.tar) and save the model to `models/cmp/experiments/semiauto_annot/resnet50_vip+mpii_liteflow/checkpoints`.
 
 After all downloads and installations, your ckpts folder should look like this:  
 
@@ -148,7 +144,9 @@ ckpts/
 ```
 
 ## 🚀 Running the Demos
-ToDo
+```bash
+python run_agent.py
+```
 
 ## 🔗 BibTeX
 If you find [MotionAgent](https://arxiv.org/abs/2502.03207) useful for your research and applications, please cite using this BibTeX:
