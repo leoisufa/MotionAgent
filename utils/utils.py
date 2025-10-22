@@ -245,7 +245,6 @@ def image2arr(filename):
     return pil2arr(pil)
 
 
-# 格式转换
 def pil2arr(pil):
     if isinstance(pil, list):
         arr = np.array(

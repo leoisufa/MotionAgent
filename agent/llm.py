@@ -71,7 +71,6 @@ class OpenAIModel(BaseModel):
         content = [{"type": "text", "text": prompt_rethink}]
         content.append({"type": "text", "text": "Following images are partial frames from the generated video:"})
 
-        # 采样视频帧
         if video:
             vr = VideoReader(video, ctx=cpu(0))
             for i in range(0, len(vr), max(1, len(vr)//6)):
@@ -84,7 +83,6 @@ class OpenAIModel(BaseModel):
                     "image_url": {"url": f"data:image/jpeg;base64,{base64_img}", "detail": "high"}
                 })
 
-        # 追加上下文信息
         content.extend([
             {"type": "text", "text": f"The task you should recomplete is: {prompt}"},
             {"type": "text", "text": f"The action you made at last time is: {action}"}
